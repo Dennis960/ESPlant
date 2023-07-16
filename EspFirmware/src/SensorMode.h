@@ -4,16 +4,18 @@
 #include <ESP8266WiFi.h>
 #include <ESP8266HTTPClient.h>
 
-#include "PlantFi.h"
-#include "Sensor.h"
-#include "Config.h"
+#include "clients/MyWiFiClient.h"
+#include "sensors/MoistureSensor.h"
+#include "configuration/Config.h"
 #include "Utils.h"
 #include "MyEeprom.h"
+#include "clients/MyMqttClient.h"
+#include "clients/MyHttpClient.h"
+#include "clients/DataConverter.h"
 
-extern PlantFi plantFi;
-
-extern int sensorValue;
-extern bool wasWifiConnectedLastCycle;
+extern MyWiFiClient wifiClient;
+extern MoistureSensor sensor;
+extern MyMqttClient mqttClient;
 
 /**
  * Setup function for the sensor mode

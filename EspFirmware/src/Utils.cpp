@@ -1,5 +1,4 @@
 #include "Utils.h"
-#include "Config.h"
 
 bool isSerialInitialized = false;
 

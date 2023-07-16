@@ -12,7 +12,7 @@
 #include "Utils.h"
 #include "MyEeprom.h"
 #include "Reset.h"
-#include "Sensor.h"
+#include "sensors/Sensor.h"
 
 #define AP_SSID "PlantFi"
 

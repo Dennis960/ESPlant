@@ -3,7 +3,16 @@
 
 #include <Arduino.h>
 
+//----------------- Pins -----------------
 #define RESET_INPUT_PIN 4
+#define MOISTURE_SENSOR_ANALOG_PIN A0
+#define MOISTURE_SENSOR_SW_PIN 5
+
+#ifdef ESP32
+#define ANALOG_MAX 4095
+#else
+#define ANALOG_MAX 1023
+#endif
 
 //----------------- Timeouts -----------------
 /**

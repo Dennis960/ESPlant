@@ -1,6 +1,6 @@
 #include <Arduino.h>
 #include "Utils.h"
-#include "ConfigurationMode.h"
+#include "configuration/ConfigurationMode.h"
 #include "SensorMode.h"
 #include "MyEeprom.h"
 #include "Reset.h"

@@ -3,6 +3,7 @@
 
 #include <Arduino.h>
 #include "Reset.h"
+#include "configuration/Config.h"
 
 #define DEBUG
 

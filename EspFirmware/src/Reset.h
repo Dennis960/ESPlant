@@ -5,7 +5,7 @@
 
 #include "Utils.h"
 #include "MyEeprom.h"
-#include "Config.h"
+#include "configuration/Config.h"
 #include "Utils.h"
 
 /**
